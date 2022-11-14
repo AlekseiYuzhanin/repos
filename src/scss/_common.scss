@@ -1,0 +1,54 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+$green: #00BF78;
+$white: #FFFFFF;
+$blue: #278AFF;
+$orange: #FB9475;
+$black: #333333;
+$gray : #F8F6F7;
+$lightgray : #E5E5E5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+.header{
+   padding-top: 3%;
+   background-image: url("../images/background.png");
+   margin: 0 auto;
+ }
+
+a{
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.middle-element__btn{
+  width: 203px;
+  height: 48px;
+  background-color:#FB9475 ;
+  border-radius: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: transparent;
+}
+
+input[type="text"] {
+  align-self: stretch;
+  height: 40px;
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+  padding-left: 10px;
+}
