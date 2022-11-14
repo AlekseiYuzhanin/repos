@@ -4,14 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333333;
 }
-
 
 .header{
     padding-top: 3%;
@@ -29,10 +27,11 @@ h2 {
 
 .top-element{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
-
 
 .top-element__logo{
     font-size: 30px;
@@ -44,7 +43,6 @@ h2 {
     font-size: 14px;
     gap: 50px;
     align-items: center;
-
 }
 
 .top-element__navigation a{
@@ -95,10 +93,6 @@ h2 {
     gap: 20px;
 }
 
-.middle-element__picture{
-
-}
-
 .middle-element__refs{
     display: flex;
     flex-direction: column;
@@ -145,13 +139,11 @@ h2 {
 .body-element__about_saloon_middle_introducing{
     font-size: 20px;
     display: flex;
-
 }
 
 .body-element__about_saloon_middle_info{
     font-size: 16px;
     padding-top: 30px;
-
 }
 
 .body-element__about_saloon_footer{
@@ -174,7 +166,6 @@ h2 {
     width: 45px;
     height: 45px;
 }
-
 
 .body-element__popular_services{
     padding-right: 150px;
@@ -214,7 +205,7 @@ h2 {
     padding-left: 150px;
     padding-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -228,6 +219,7 @@ h2 {
     gap: 50px;
     padding-bottom: 50px;
     font-size: 14px;
+    flex-direction: row;
 }
 
 .body-element__services_and_prices_services a{
@@ -241,21 +233,21 @@ h2 {
 .body-element__services_and_prices_haircuts{
     padding-top: 25px;
     display: flex;
-    gap: 60px;
-    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 70px;
 }
 
 .body-element__services_and_prices_haircuts_description{
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .body-element__services_and_prices_haircuts_prices{
-    width: 20%;
     color: #00BF78;
 }
 
@@ -292,7 +284,6 @@ h2 {
     font-size: 10px;
 }
 
-
 .body-element__our_works{
     padding-top: 50px;
     display: flex;
@@ -308,7 +299,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .body-element__our_works_arrows{
@@ -338,7 +328,6 @@ h2 {
     justify-content: space-around;
     gap: 60px;
 }
-
 
 .body-element__our_works_bren_types img{
     width: 100px;
@@ -502,7 +491,6 @@ input[type="text"] {
         display: flex;
         flex-direction: column;
         gap: 50px;
-
     }
 
     .body-element__about_saloon_middle_text{
@@ -519,14 +507,148 @@ input[type="text"] {
         gap: 30px;
     }
 
-    .body-element__popular_services{
+    .body-element__popular_services_logo{
         text-align: center;
-
     }
 
     .popular_services_section{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
     }
+
+    .body-element__popular_services_cards{
+        width: 100%;
+    }
+    .body-element__services_and_prices{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .body-element__services_and_prices_logo{
+        text-align: center;
+    }
+
+    .body-element__services_and_prices_haircuts{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .body-element__services_and_prices_haircuts_description{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+   .body-element__masters{
+       text-align: center;
+       align-content: center;
+       align-self: center;
+       padding-right: 50px;
+       padding-left: 50px;
+   }
+
+   .body-element__master_about{
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+   }
+
+   .body-element__our_works{
+       padding-left: 50px;
+       padding-right: 50px;
+   }
+
+   .body-element__our_works_arrows{
+       display: none;
+   }
+
+   .body-element__our_works_models{
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+       align-items: center;
+   }
+
+    .body-element__our_works_models img{
+        width: 50%;
+        align-content: stretch;
+    }
+
+    .body-element__our_works_bren_types{
+        gap: 45px;
+    }
+
+    .body-element__contacts{
+        align-content: center;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .body-element__contacts_elements{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .body-element__contacts_elements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .body-element__contacts_information_social_networks{
+       padding-left: 30px;
+    }
+
+    .footer-elements{
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 20px;
+        gap: 100px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .footer-elements__info_ref{
+        display: none;
+    }
+
+    .footer-elements_navigation{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .header{
+        width: 100%;
+    }
+
+    .top-element{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .top-element__contacts{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .middle-element__title{
+        gap: 0px;
+        text-align: center;
+    }
+
 }
