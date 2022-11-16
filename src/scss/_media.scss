@@ -241,12 +241,10 @@
     padding-left: 25px;
     padding-right: 25px;
     align-items: center;
-  }
-
-  .body-element__services_and_prices_services {
-    width: 10%;
-    overflow: scroll;
-    text-align: center;
+    .body-element__services_and_prices_services {
+      overflow: scroll;
+      width: 370px;
+    }
   }
 
   .body-element__masters {
@@ -272,4 +270,9 @@
     }
   }
 
+  .footer{
+    .footer-elements{
+      width: 300px;
+    }
+  }
 }
