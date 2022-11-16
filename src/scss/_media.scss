@@ -6,8 +6,8 @@
     display: none;
   }
   .top-element{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
     display: flex;
     justify-content: space-between;
   }
@@ -76,25 +76,27 @@
   .body-element__services_and_prices{
     padding-right: 50px;
     padding-left: 50px;
-  }
-  .body-element__services_and_prices_logo{
-    text-align: center;
-  }
-
-  .body-element__services_and_prices_haircuts{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-  }
-
-  .body-element__services_and_prices_haircuts_description{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
+    .body-element__services_and_prices_logo{
+      text-align: center;
+    }
+    .body-element__services_and_prices_haircuts{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+    }
+    .body-element__services_and_prices_haircuts_description{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+    .body-element__services_and_prices_services{
+      width: 630px;
+      overflow: scroll;
+    }
   }
 
   .body-element__masters{
@@ -171,13 +173,17 @@
 }
 
 @media (max-width: 480px) {
-
   .top-element {
     display: flex;
     gap: 30px;
     padding-left: 25px;
     padding-right: 25px;
     flex-direction: column;
+  }
+
+  .top-element__logo{
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   .top-element__contacts {
@@ -205,6 +211,21 @@
   .body-element__about_saloon {
     padding-left: 25px;
     padding-right: 25px;
+
+    .body-element__about_saloon_logo {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .body-element__about_saloon_middle_text{
+      width: 200%;
+    }
+  }
+
+  .body-element__about_saloon_footer{
+    width: 100%;
+    p{
+      width: 200%;
+    }
   }
 
   .body-element__popular_services {
@@ -214,13 +235,17 @@
 
   .body-element__popular_services_cards {
     align-items: stretch;
-
   }
 
   .body-element__services_and_prices {
     padding-left: 25px;
     padding-right: 25px;
     align-items: center;
+  }
+
+  .body-element__services_and_prices_services {
+    width: 10%;
+    overflow: scroll;
     text-align: center;
   }
 
@@ -234,12 +259,16 @@
     padding-right: 25px;
     text-align: center;
     align-items: center;
-  }
-
-  .body-element__our_works_models{
-    img{
-      width: 70%;
-      align-content: stretch;
+    .body-element__our_works_models {
+      img {
+        width: 70%;
+        align-content: stretch;
+      }
+    }
+    .body-element__our_works_bren_types{
+      img{
+        width: 50px;
+      }
     }
   }
 
