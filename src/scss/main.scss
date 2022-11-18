@@ -19,6 +19,7 @@
 .mobile-navigation{
   display: none;
 }
+
 .top-element__navigation{
   display: flex;
   font-size: 14px;
@@ -192,8 +193,7 @@ body-element__about_saloon{
     }
   }
 }
-
-.body-element__services_and_prices_haircuts{
+%body-element__services_and_prices_inheritance{
   padding-top: 25px;
   display: flex;
   flex-wrap: wrap;
@@ -203,18 +203,89 @@ body-element__about_saloon{
   gap: 30px;
 }
 
-.body-element__services_and_prices_haircuts_description{
+%body-element__services_and_prices_description_inheritance{
   width: 30%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.body-element__services_and_prices_haircuts_prices{
+%body-element__services_and_prices_prices_inheritance{
   color: $green;
 }
 
+.body-element__services_and_prices_haircuts{
+  @extend %body-element__services_and_prices_inheritance;
+}
 
+.body-element__services_and_prices_haircuts_description{
+  @extend %body-element__services_and_prices_description_inheritance
+}
+
+.body-element__services_and_prices_haircuts_prices{
+  @extend %body-element__services_and_prices_prices_inheritance;
+}
+
+.body-element__services_and_prices_cosmetology{
+  display: none;
+  @extend %body-element__services_and_prices_inheritance;
+}
+
+.body-element__services_and_prices_cosmetology_description{
+  @extend %body-element__services_and_prices_description_inheritance
+}
+
+.body-element__services_and_prices_cosmetology_prices{
+  @extend %body-element__services_and_prices_prices_inheritance;
+}
+.body-element__services_and_prices_manicure_and_pedicure{
+  display: none;
+  @extend %body-element__services_and_prices_inheritance;
+}
+
+.body-element__services_and_prices_manicure_and_pedicure_description{
+  @extend %body-element__services_and_prices_description_inheritance
+}
+
+.body-element__services_and_prices_manicure_and_pedicure_prices{
+  @extend %body-element__services_and_prices_prices_inheritance;
+}
+.body-element__services_and_prices_makeup{
+  display: none;
+  @extend %body-element__services_and_prices_inheritance;
+}
+
+.body-element__services_and_prices_makeup_description{
+  @extend %body-element__services_and_prices_description_inheritance
+}
+
+.body-element__services_and_prices_makeup_prices{
+  @extend %body-element__services_and_prices_prices_inheritance;
+}
+.body-element__services_and_prices_brows_and_lishes{
+  display: none;
+  @extend %body-element__services_and_prices_inheritance;
+}
+
+.body-element__services_and_prices_brows_and_lishes_description{
+  @extend %body-element__services_and_prices_description_inheritance
+}
+
+.body-element__services_and_prices_brows_and_lishes_prices{
+  @extend %body-element__services_and_prices_prices_inheritance;
+}
+.body-element__services_and_prices_massage{
+  display: none;
+  @extend %body-element__services_and_prices_inheritance;
+}
+
+.body-element__services_and_prices_massage_description{
+  @extend %body-element__services_and_prices_description_inheritance
+}
+
+.body-element__services_and_prices_massage_prices{
+  @extend %body-element__services_and_prices_prices_inheritance;
+}
 
 .body-element__masters{
   margin-top: 100px;
