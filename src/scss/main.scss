@@ -193,6 +193,27 @@ body-element__about_saloon{
     }
   }
 }
+
+#tab1Content{
+  display: flex;
+}
+#tab2Content{
+  display: none;
+}
+
+#tab3Content{
+  display: none;
+}
+#tab4Content{
+  display: none;
+}
+#tab5Content{
+  display: none;
+}
+#tab6Content{
+  display: none;
+}
+
 .body-element__services_and_prices_elements{
   padding-top: 25px;
   display: flex;
