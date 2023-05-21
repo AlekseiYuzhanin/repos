@@ -164,14 +164,14 @@
             <h2>Услуги и цены</h2>
         </div>
         <nav class="body-element__services_and_prices_services">
-            <a href="#">Стрижка и укладка</a>
-            <a href="#">Косметология</a>
-            <a href="#">Маникюр и педикюр</a>
-            <a href="#">Макияж</a>
-            <a href="#">Брови и ресницы</a>
-            <a href="#">Массаж</a>
+            <a href="#services_and_prices" id="tab1" onclick="selectTab(1)">Стрижка и укладка</a>
+            <a href="#services_and_prices" id="tab2" onclick="selectTab(2)">Косметология</a>
+            <a href="#services_and_prices" id="tab3" onclick="selectTab(3)">Маникюр и педикюр</a>
+            <a href="#services_and_prices" id="tab4" onclick="selectTab(4)">Макияж</a>
+            <a href="#services_and_prices" id="tab5" onclick="selectTab(5)">Брови и ресницы</a>
+            <a href="#services_and_prices" id="tab6" onclick="selectTab(6)">Массаж</a>
         </nav>
-        <div class="body-element__services_and_prices_elements">
+        <div id="tab1Content" class="body-element__services_and_prices_elements">
             <div class="body-element__services_and_prices_description_elements">
                 <h3>Женская стрижка</h3>
                 <p>Короткие волосы</p>
@@ -229,7 +229,7 @@
                 <p>3000 &#8381</p>
             </div>
         </div>
-        <div class="body-element__services_and_prices_elements">
+        <div id="tab2Content" class="body-element__services_and_prices_elements">
             <div class="body-element__services_and_prices_description_elements">
                 <h3>Пилинг алмазный</h3>
                 <p>Лицо</p>
@@ -287,7 +287,7 @@
                 <p>335 &#8381</p>
             </div>
         </div>
-        <div class="body-element__services_and_prices_elements">
+        <div id="tab3Content" class="body-element__services_and_prices_elements">
             <div class="body-element__services_and_prices_description_elements">
                 <h3>Маникюр</h3>
                 <p>Гель лак</p>
@@ -345,7 +345,7 @@
                 <p>1000 &#8381</p>
             </div>
         </div>
-        <div class="body-element__services_and_prices_elements">
+        <div id="tab4Content" class="body-element__services_and_prices_elements">
             <div class="body-element__services_and_prices_description_elements">
                 <h3>Макияж</h3>
                 <p>Вечерний</p>
@@ -403,7 +403,7 @@
                 <p>300 &#8381</p>
             </div>
         </div>
-        <div class="body-element__services_and_prices_elements">
+        <div id="tab5Content" class="body-element__services_and_prices_elements">
             <div class="body-element__services_and_prices_description_elements">
                 <h3>Брови</h3>
                 <p>Окрашивание краской</p>
@@ -461,7 +461,7 @@
                 <p>2000 &#8381</p>
             </div>
         </div>
-        <div class="body-element__services_and_prices_elements">
+        <div id="tab6Content" class="body-element__services_and_prices_elements">
             <div class="body-element__services_and_prices_description_elements">
                 <h3>Массаж</h3>
                 <p>Антицеллюлитный</p>
@@ -616,13 +616,13 @@
                 </div>
             </div>
             <div class="body-element__contacts_form">
-                <form>
+                <form id="contactForm">
                     <div class="body-element__contacts_form_data">
                         <h3>Быстрая запись</h3>
                         <p>Наш менеджер перезвонит в течение нескольких<br>
                             минут, уточнит подробности и согласует время</p>
-                        <input placeholder="Ваше имя" name="name" type="text" required>
-                        <input placeholder="+7 (___) ___-__-__" type="text" name="numberPhone" required>
+                        <input placeholder="Ваше имя" name="name" type="text" id="nameId" required>
+                        <input placeholder="+7 (___) ___-__-__" type="text" id="numberPhoneId" name="numberPhone" required>
                         <button class="middle-element__btn">
                             Записаться
                         </button>

@@ -8,6 +8,10 @@ $black: #333333;
 $gray : #F8F6F7;
 $lightgray : #E5E5E5;
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
